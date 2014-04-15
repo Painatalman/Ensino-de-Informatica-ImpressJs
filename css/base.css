@@ -1,0 +1,17 @@
+/*http://demosthenes.info/blog/857/Using-Inline-Block-In-Web-Development*/
+nav{
+    background: #222;
+    text-align:center; /*cuidado com as centralizacoes, pode nao ficar mt bem!*/
+}
+nav a{
+    
+    font-family: Proxima Nova, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    transition: .4s;
+    display: inline-block;
+    padding: 1rem;
+}
+nav a:hover{
+    background: rgba(255,30,30,0.9);
+}

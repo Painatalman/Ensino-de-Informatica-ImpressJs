@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>O ensino do HTML | Miguel Costa</title>
+
+        <!-- Google Webfonts and our stylesheet -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" />
+        <link rel="stylesheet" href="css/impress-demo.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div id="impress" class="impress-not-supported">
+            <div class="fallback-message"> <!-- Para o caso de impress n funcionar, esta fallback ira aparecer -->
+    <p>Your browser doesn't support the features required by impress.js, so you
+are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest Chrome, Safari, or Firefox
+10.</p>
+  </div>
+            <!-- The Slides Will Go Here -->
+            <header class="step" id="start" data-x="0" data-y="0">
+                <h1>O ensino do HTML</h1>
+                <h3>O presente e o futuro</h3>
+            </header>
+            <span class="step" id="autor" data-x="0" data-y="0" data-rotate-y="90">
+                por: Miguel Costa
+            </span>
+            <div id="intro" class="step" data-x="30" data-y="30" data-rotate-x="90">
+                <h2>Introdução</h2>
+                Isto eh acima de tudo uma apresentação, nada de mais!
+            </div>
+            <div id="materia-ib" class="step materia" data-x="-130" data-y="130" data-scale="0.2">
+            <h2>Matéria - Inline vs Block</h2>
+                <ul>
+                    <li>Inline usa padding e margens horizontais, assim como borders. Com blocks é tudo aceite.</li>
+                    <li>Inline tem tamanho definido pelo conteúdo, os block ocupam o comprimento do elemento pai, por defeito.</li>
+                    <li>Inline não aceita width ou height</li>
+                    <li>Por defeito, elementos block vêm uns em cima dos outros</li>
+                    <li>
+                        <h3>Inline-block?</h3>
+                        <ul>
+                            <li>aceitam width/height e borders e margin/padding por todos os lados (block)</li>
+                            <li>tamanho, por defeito, definido pelo conteúdo, e alinhados lado-a-lado (inline)</li>
+                            <li>Bons para menus, por exemplo, mas cuidado com os "line-feed/carriage return" (ENTER) entre elementos! </li>
+                        </ul>
+                    </li>
+                    <li>Outros (flexbox...)</li>
+                </ul>
+                <a href="http://demosthenes.info/blog/857/Using-Inline-Block-In-Web-Development">Fonte</a>
+            </div>
+            <div class="step" id="exemplo" data-x="30" data-y="30">
+                <p>Porcaria</p>
+            </div>
+            <div class="step">
+                <p>Mais Porcaria</p>
+            </div>
+            <div class="step" id="cap1">
+                <header>
+                HTML é Semântica    
+                </header>
+                <section>
+                    <p>Aprender a fazer páginas, não tags</p>
+                    <p>Não "o quê", mas sim "para quê"</p>
+                    <p>Tags vão sendo adicionadas à medida que são necessárias</p>
+                    <p>Aprendizagem com significado</p>
+                </section>
+            </div>
+            <div class="step" id="cap2">
+                <header>
+                HTML é prática    
+                </header>
+                <section>
+                    <p>Aprendizagem por exemplo</p>
+                    <p>Tutorial por etapas, objetivo geral</p>
+                    <p>Professor deve dar o exemplo de funcionamento</p>
+                    <p>Promoção boas práticas e orientações (IDE, identação...)</p>
+                    <p>Proposta: página web biográfica com cabeçalho, menu de navegação e rodapé</p>
+                </section>
+            </div>
+            <div class="step" id="cap3">
+                <header>
+                HTML é estrutura, CSS é estilo    
+                </header>
+                <section>
+                    <p>Recurso a CSS deve ser presente desde o início</p>
+                    <p>Importância de separar estrutura/conteúdo de personalização visual</p>
+                    <p>Impacto das regras em tipos de elementos (inline, block, etc.)</p>
+                    <p>Pseudo-seletores como regras CSS com condições</p>
+                </section>
+            </div>
+            <div class="step" id="cap4">
+                <header>
+                HTML é moderno (e semântico... <i>again</i>)    
+                </header>
+                <section>
+                    <p>HTML5 é um futuro, mas não à prova de bala!</p>
+                   
+                    <p>Diferenças entre browsers, porquê?</p>
+                    <p>Tags HTML5, regras CSS3 requisitos de browser</p>
+                    <p>HTML5 é uma web semântica, e isso deve exibir-se desde o início</p>
+                </section>
+            </div>
+            <div class="step" id="cap5">
+                <header>
+                HTML é... interativo?    
+                </header>
+                <section>
+                    <p>HTML/CSS são, acima de tudo, markup e estilo</p>
+                   
+                    <p>Programação? Processamento de dados e informação</p>
+                    <p>O papel do Javascript do lado do cliente</p>
+                    <p>Falar (relembrar) um pouco do modelo cliente/servidor</p>
+                    <p>Atividades práticas com jQuery</p>
+                    <p>Suscitar a necessidade de outra tecnologia, para lidar com dados no servidor</p>
+                </section>
+            </div>     
+            <div id="bibliografia" class="step" data-x="0" data-y="0" data-scale="0.04">
+                <h1>Bibliografia</h1>
+                <ul>
+                    <li><a href="http://tutorialzine.com/2012/02/css3-product-showcase/">Tutorialzine - CSS3</a></li>
+                    <li><a href="http://www.1stwebdesigner.com/css/creating-stunning-visualizations-with-impress-js/">1st web designer - impress.js</a></li>
+                    <li><a href="http://www.andismith.com/blog/2012/01/impress-with-impress/">Andismith - impress.js</a></li>
+                    <li><a href="http://www.cubewebsites.com/blog/guides/how-to-use-impress-js/">Cubewebsites - impress.js</a></li>
+                    <li>
+                        <a href="https://www.codecademy.com/">Codecademy</a>
+                    </li>
+                    <li><a href="https://dash.generalassemb.ly">Dash</a></li>
+                <li><a href="https://www.codeschool.com/">Code School</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <a id="arrowLeft" class="arrow">&lt;</a>
+        <a id="arrowRight" class="arrow">&gt;</a>
+
+        <!-- JavaScript includes -->
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="js/impress.js"></script>
+        <script>impress().init();</script>
+
+    </body>
+</html>

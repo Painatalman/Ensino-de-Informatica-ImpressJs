@@ -1,0 +1,24 @@
+body{
+    font: 16px Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: circle;
+}
+
+.step{
+    border: 1px solid black;
+    font-family: Helvetica, sans-serif;
+    width:1000px;
+}
+
+.step > h1,h2,h3{
+    text-transform: uppercase;
+    padding-bottom: 0.6em;
+}
+
+.step > ul li{
+    margin-left: 2em;
+    font-size: 0.6em;
+}

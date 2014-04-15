@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>UX Tuts</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <!-- Vamos fazer botoes em SVG? -->
+    <!-- SVG nao eh do tipo block, mas sim inline! -->
+    <!-- http://tutorials.jenkov.com/svg/path-element.html -->
+
+    <!-- svg circle for progress indication -->
+    <svg class="progress-circle" width="70" height="70">
+        <path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z" />
+    </svg>
+    <svg width="150" height="150">
+        <path d="M50,50
+             A30,30 0 0,1 35,20
+             L100,100
+             M110,110
+             L100,0" style="stroke:#660000; fill:none;" />
+        <!-- Traducao:
+                M50,50 = MOVE TO 50,50
+                A30,30 0 0,1 35,20 = ARC from Current position to position 35,20 (last 2 numbers),  with radius of 30,30 (x and y), 0 x-axix rotation
+                L100,100 = LINE from current position to 100, 100?
+                M110, 110 = MOVE TO 110, 110
+                L100,0 = LINE TO 100,0
+            -->
+    </svg>
+    <svg class="circles-cute">
+        <path d="M40,20  A30,30 0 0,0 70,70" style="stroke: #cccc00; stroke-width:2; fill:none;" />
+
+        <path d="M40,20  A30,30 0 1,0 70,70" style="stroke: #ff0000; stroke-width:2; fill:none;" />
+
+        <path d="M40,20  A30,30 0 1,1 70,70" style="stroke: #00ff00; stroke-width:2; fill:none;" />
+
+        <path d="M40,20  A30,30 0 0,1 70,70" style="stroke: #0000ff; stroke-width:2; fill:none;" />
+    </svg>
+    <svg class="moons" width="100" height="100">
+        <path d="M40,20  A30,30 0 0,0 70,70" style="stroke: #cccc00; stroke-width:2; fill:none;" />
+
+        <path d="M40,20  A30,30 0 1,0 70,70" style="stroke: #ff0000; stroke-width:2; fill:none;" />
+
+        <path d="M60,40  A60,60 0 1,1 70,70" style="stroke: #00ff00; stroke-width:2; fill:none;" />
+
+        <path d="M60,40  A60,60 0 0,1 70,70" style="stroke: #0000ff; stroke-width:2; fill:none;" />
+    </svg>
+    <svg class="fillings" width="150" height="150">
+        <!-- Z para fechar caminhos? -->
+        <path d="M0,0 L150,0 L150,150  Z" style="stroke: #0000cc;
+             stroke-width: 2px;
+             fill  : #ccccff;"></path>
+    </svg>
+    <!-- E agora, um botao do tutorial em cima -->
+    <!-- progress button -->
+    <div id="progress-button" class="progress-button">
+        <!-- button with text -->
+        <button>
+            <span>Submit</span>
+        </button>
+
+        <!-- svg circle for progress indication -->
+        <svg class="progress-circle" width="70" height="70">
+            <path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z" />
+        </svg>
+
+        <!-- checkmark to show on success -->
+        <svg class="checkmark" width="70" height="70">
+            <path d="m31.5,46.5l15.3,-23.2" />
+            <path d="m31.5,46.5l-8.5,-7.1" />
+        </svg>
+
+        <!-- cross to show on error -->
+        <svg class="cross" width="70" height="70">
+            <path d="m35,35l-9.3,-9.3" />
+            <path d="m35,35l9.3,9.3" />
+            <path d="m35,35l-9.3,9.3" />
+            <path d="m35,35l9.3,-9.3" />
+        </svg>
+
+    </div>
+    <!-- /progress-button -->
+</body>
+
+</html>
